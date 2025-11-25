@@ -1,15 +1,9 @@
 package edu.udistrital.acm.proyecto_final.entities;
 
-import java.time.LocalDateTime;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.Data;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -31,7 +25,7 @@ public class Usuario {
     private String apellido;
 
     @Column(nullable = false, unique = true)
-    private String ussername;
+    private String usSername;
 
     private String password;
 
